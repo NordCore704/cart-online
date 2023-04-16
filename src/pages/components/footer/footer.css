@@ -1,0 +1,18 @@
+.foot-btn{
+    text-shadow: none;
+    border: 1px solid;
+    transition: .3s ease-in-out;
+}
+@media all and (width <= 600px) {
+    .foot{
+        height: 65vh;
+    }
+    .links-foot{
+        flex-direction: column;
+    }
+    .logo-motto--div{
+        width: 80%;
+        left: 10%;
+        height: 25vh;
+    }
+}

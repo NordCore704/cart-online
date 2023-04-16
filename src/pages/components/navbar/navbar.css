@@ -1,0 +1,34 @@
+header{
+    visibility: hidden;
+} 
+ul li{
+    margin-right: 15px;
+    font-weight: 580;
+}
+.hamburger{
+    display: none;
+}
+.desktop-none{
+    display: none;
+}
+.active{
+    color: #ff0035;
+}
+/* === mobile === */
+@media all and (width <= 600px) {
+    .hamburger, .desktop-none{
+        display: flex;
+        transition: .4s ease-in-out;
+    }
+    .desktop-none{
+        backdrop-filter: blur(10px) brightness(75%) ;
+        opacity: 1;
+
+    }
+    .desktop-none div {
+        background: linear-gradient(to left, #fafaff, #e4d9ff);
+    }
+    .mobile-none{
+        display: none;
+    }
+}

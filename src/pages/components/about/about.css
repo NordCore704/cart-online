@@ -1,0 +1,34 @@
+.big-text--about{
+    text-shadow: .02em .02em 0 var(--Dark);
+}
+.story--header{
+    text-shadow: .02em .02em 0 var(--Dark);
+}
+@media all and (width <= 600px) {
+    .big-text--about{
+        font-size: 70px;
+    }
+    .quotes-div--about{
+        flex-direction: column;
+    }
+    .quotes-div--about div{
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+    }
+    .quote--one{
+        border-right: 0;
+        border-bottom: 1px solid var(--Dark);
+    }
+    .our-story--about{
+        flex-direction: column-reverse;
+    }
+    .our-story--about div {
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+    }
+    .story--text{
+        justify-content: flex-start;
+    }
+}

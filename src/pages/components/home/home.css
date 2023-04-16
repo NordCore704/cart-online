@@ -1,0 +1,122 @@
+/* .intro--section{
+    /* visibility: hidden;
+} */
+.intro-text{
+    font-size: 85px;
+    line-height: 60px;
+    /* text-shadow: .03em .03em 0 hsla(230, 40%, 50%, 1); */
+    text-shadow: .02em .02em 0 var(--Dark);
+    letter-spacing: -8px;
+}
+.no-shadow{
+    text-shadow: none;
+}
+.shadow-text{
+    text-shadow: .02em .02em 0 var(--Dark);
+    animation: sliding 18s linear infinite;
+    transition: ease-in-out;
+}
+@keyframes sliding {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.text--clip{
+    font-size: 15rem;
+    line-height: 170px;
+    background: url('../../../images/clip.jpg') center/cover no-repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -20px;
+    word-spacing: -70px;
+}
+.avatar-clip-div{
+    border: 1px solid black;
+    border: 1px solid var(--Dark);
+    box-shadow: -0.2rem 0.2rem black;
+    border-radius: 5px;
+}
+.shop-btn{
+    text-shadow: none;
+    transition: all 0.4s ease-in-out;
+}
+.cart--boy{
+    z-index: 1;
+}
+.empty{
+    z-index: 0;
+}
+@media all and (width <= 900px){
+    .intro-text{
+        font-size: 60px;
+        line-height: 50px;
+        letter-spacing: -5px;
+    }
+    .text--clip{
+        font-size: 8rem;
+        line-height: 90px;
+        word-spacing: -20px;
+        margin-right: 0;
+    }
+}
+@media all and (width <= 768px) {
+    .intro-text{
+        font-size: 55px;
+        line-height: 38px;
+    }
+}
+@media all and (width <= 600px) {
+    .intro-text{
+        font-size: 60px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    .intro--section{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: start;    
+    }
+    .horizontal--text{
+        font-size: 20px;
+    }
+    .avatar-clip-div{
+        margin-top: 20px;
+        align-self: center;
+        margin-right: 0;
+    }
+    .shop-btn{
+        margin-top: 2px;
+    }
+    .apparel--section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0 0 0;
+    }
+    .apparel--text{
+        /* border-bottom: 2px solid var(--Dark); */
+        border-left: 0px;
+        width: 100%;
+        padding: 10px 10px;
+        height: 50%;
+        text-align: center;
+    }
+    .apparel--image{
+        height: 50%;
+        background-color: #48acf0;
+    }
+    .store--categories{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .elegant--section{
+        margin-top: 80px;
+        flex-direction: column;
+    }
+}
+@media all and (width <= 425px) {
+    
+}

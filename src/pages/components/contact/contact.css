@@ -1,0 +1,19 @@
+@media all and (width <= 600px) {
+    .contact--section{
+        flex-direction: column;
+        margin-top: 70px;
+    }
+    .image-div--contact{
+        width: 90%;
+    }
+    .talk-div--contact{
+        width: 100%;
+    }
+    .talk-div--contact p{
+        text-align: center;
+    }
+    .social--icons-contact{
+        align-items: center;
+        justify-content: center;
+    }
+}

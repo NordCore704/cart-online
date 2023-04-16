@@ -1,0 +1,23 @@
+import logo from './cart-blue.png'
+import favicon from './cart-green.png'
+import hamburger from './icon-hamburger.svg'
+import closeburger from './icon-close.svg'
+import clip from './clip.jpg'
+import apparel from './apparel.png'
+import apparelTwo from './apparel-2.png'
+import apparelThree from './apparel-3.png'
+import gadgetsIcon from './gadget.png'
+import accessoriesIcon from './accessories.png'
+import apparelIcon from './fashion.png'
+import cartBoy from './cartboy.png'
+import instagram from './icon-instagram.svg'
+import twitter from './icon-twitter.svg'
+import linkedIn from './icon-linkedin.svg'
+import mail from './icon-mail.svg'
+import aboutImage from './about-image.jpg'
+import anonymous from './anonymous.png'
+import contactImageOne from './illustration.jpg'
+import contactImageTwo from './contact.jpg'
+export {
+    logo, favicon, hamburger, closeburger, clip, apparel, apparelTwo, apparelThree, gadgetsIcon, accessoriesIcon, apparelIcon, cartBoy, instagram, twitter, mail, linkedIn, aboutImage, anonymous, contactImageOne, contactImageTwo,
+}

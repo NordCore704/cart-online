@@ -1,0 +1,196 @@
+{
+    "store_categories": [
+        {
+            "id": "Men_Clothing",
+            "category": "Men_Clothing",
+            "title": "Men Clothing",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": ""
+        },
+        {
+            "id": "Women_Clothing",
+            "title": "Women Clothing",
+            "category": "Women_Clothing",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": ""
+        },
+        {
+            "id": "Gadgets",
+            "category": "Gadgets",
+            "title": "Gadgets",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": ""
+        }
+    ],
+    "all_items": [
+        {
+            "id": "1",
+            "name": "T-Shirt",
+            "category": "Men_Clothing",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "100"
+        },
+        {
+            "id": "2",
+            "category": "Women_Clothing",
+            "name":"Baggy Shirt",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "1020"
+
+        },
+        {
+            "id": "3",
+            "category": "Gadgets",
+            "name": "Laptop",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "20"
+        },
+        {
+            "id": "4",
+            "category": "Men_Clothing",
+            "name":"Minimal Wrist Watch",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "40"
+        },
+        {
+            "id": "5",
+            "category": "Women_Clothing",
+            "name": "Fall Season Jackets",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "50"
+        },
+        {
+            "id": "6",
+            "category": "Gadgets",
+            "name": "SSD, 500GB",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "150"
+        },
+        {
+            "id": "7",
+            "category": "Men_Clothing",
+            "name": "Zen Bumper Jacket",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "200"
+        },
+        {
+            "id": "8",
+            "category": "Women_Clothing",
+            "name": "Stilletos",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "90"
+        },
+        {
+            "id": "9",
+            "category": "Gadgets",
+            "name": "Go-Pro Camera",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "20"
+        },
+        {
+            "id": "10",
+            "category": "Men_Clothing",
+            "name": "Nike Air Dunk",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "170"
+        },
+        {
+            "id": "11",
+            "category": "Women_Clothing",
+            "name": "Pink Jordan, Virgil Collection",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "200"
+        },
+        {
+            "id": "12",
+            "category": "Gadgets",
+            "name": "Beatbox Beta",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "80"
+        },
+        {
+            "id": "13",
+            "category": "Men_Clothing",
+            "name": "Amiri X Winter",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "300"
+        },
+        {
+            "id": "14",
+            "category": "Women_Clothing",
+            "name": "Chanel Birkin",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "600"
+        },
+        {
+            "id": "15",
+            "category": "Gadgets",
+            "name": "Magnetic Arc",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "300"
+        },
+        {
+            "id": "16",
+            "category": "Men_Clothing",
+            "name": "Nike Air X Naruto",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "190"
+        },
+        {
+            "id": "17",
+            "category": "Women_Clothing",
+            "name": "Crochet",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "70"
+        },
+        {
+            "id": "18",
+            "category": "Gadgets",
+            "name": "Raspberry Pi, 500GB Chip",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "600"
+        },
+        {
+            "id": "19",
+            "category": "Men_Clothing",
+            "name": "LV X North Face Beam",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "100"
+        },
+        {
+            "id": "20",
+            "category": "Women_Clothing",
+            "name": "Goth Boots",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "150"
+        },
+        {
+            "id": "21",
+            "category": "Gadgets",
+            "name": "PS5 DualShock",
+            "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
+            "image": "",
+            "price": "140"
+        }
+    ]
+}

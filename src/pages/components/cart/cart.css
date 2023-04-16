@@ -1,0 +1,14 @@
+@media all and (width <= 600px) {
+    .cart--main{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .cart--body{
+        width: 100%;
+
+    }
+    .cart--checkout{
+        width: 100%;
+    }
+}
