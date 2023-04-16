@@ -1,5 +1,5 @@
 import React from "react";
-import { ProductInfo } from "@/pages/components";
+import { ProductInfo } from "@/exports";
 
 const singleProduct = ({ data }) => {
   return (

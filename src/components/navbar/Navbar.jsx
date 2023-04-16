@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { logo, hamburger, closeburger } from "../../../images";
+// import { logo, hamburger, closeburger } from "../../../images";
+import { logo, hamburger, closeburger } from "@/images";
 import gsap, { Power3} from "gsap";
 const Navbar = () => {
   const [toggle, setToggle] = useState(true);

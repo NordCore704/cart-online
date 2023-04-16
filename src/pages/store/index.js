@@ -1,5 +1,6 @@
 import React from "react";
-import { Products } from "../components";
+import { Products } from "../../exports";
+
 
 
 const products = ({ data }) => {

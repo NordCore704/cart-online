@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 import { CartState } from "@/helpers/CartContext";
-import { SingleProduct, CartHeader } from "..";
+import { SingleProduct, CartHeader } from "../../exports";
 
 const ProductCategory = ({ data, pageName }) => {
 

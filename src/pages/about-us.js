@@ -1,5 +1,5 @@
 import React from 'react'
-import { About, OurStory } from './components'
+import { About, OurStory } from '../exports'
 import { Inter, Poppins } from 'next/font/google'
 
 

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import gsap, { Power3 } from "gsap";
 import Link from "next/link";
-import { HorizontalText } from "..";
+import { HorizontalText } from "../../exports";
 
 const HomePage = () => {
   const timeline = gsap.timeline();

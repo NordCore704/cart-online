@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Navbar } from '..'
+import { Footer, Navbar } from '../../exports'
 
 
 const SharedLayout = ({children}) => {

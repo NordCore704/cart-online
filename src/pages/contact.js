@@ -1,5 +1,5 @@
 import React from 'react'
-import { Contact } from './components'
+import { Contact } from '../exports'
 
 const contact = () => {
   return (

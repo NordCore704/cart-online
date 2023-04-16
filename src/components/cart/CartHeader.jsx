@@ -2,19 +2,18 @@ import React, { useState } from "react";
 import { FaShoppingCart, FaArrowDown } from "react-icons/fa";
 import { BiDownArrow } from "react-icons/bi";
 import { CartState } from "@/helpers/CartContext";
-import { MiniCartDisplay } from "..";
-import { Inter, Poppins } from 'next/font/google'
-
+import { MiniCartDisplay } from "../../exports";
+import { Inter, Poppins } from "next/font/google";
 
 const inter = Inter({
-  subsets: ['latin'],
-  weight: '400',
-})
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: '500',
-})
+  subsets: ["latin"],
+  weight: "500",
+});
 
 const CartHeader = ({ item }) => {
   const [showMiniCart, setShowMiniCart] = useState(false);
@@ -35,7 +34,16 @@ const CartHeader = ({ item }) => {
         <p className={`text-white ml-1 ${inter.className}`}>{cart.length}</p>
         <BiDownArrow className="text-white ml-1" />
       </button>
-      {showMiniCart ? <MiniCartDisplay inter={inter} poppins={poppins} cart={cart} item={item} /> : <></>}
+      {showMiniCart ? (
+        <MiniCartDisplay
+          inter={inter}
+          poppins={poppins}
+          cart={cart}
+          item={item}
+        />
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
