@@ -80,7 +80,7 @@ const Contact = () => {
           className="text-4xl font-bold capitalize opacity-0 translate-x-7"
           ref={headerRef}
         >
-          Share Your Opinions with Us
+          Share Your Opinions with Us 
         </p>
         <p
           className="text-3xl font-semibold capitalize opacity-0 -translate-y-5"
