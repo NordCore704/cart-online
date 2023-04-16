@@ -4,13 +4,13 @@ const nextConfig = {
   swcMinify: true,
   optimizeFonts: true,
     images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "fakestoreapi.com",
-      },
-    ],
-    // domains: ["img.fakestoreapi.com"],
+    // remotePatterns: [
+    //   {
+    //     protocol: "https",
+    //     hostname: "fakestoreapi.com",
+    //   },
+    // ],
+    domains: ["fakestoreapi.com"],
     minimumCacheTTL: 1500000,
   },
   transpilePackages: ["next/font"]
