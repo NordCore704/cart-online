@@ -20,7 +20,7 @@ import ProductInfo from "./products/ProductInfo";
 import MiniCartDisplay from "./cart/MiniCartDisplay";
 import CartCheckout from "./cart/CartCheckout";
 import CartButton from "./home/cartButton/CartButton";
-export {
+export default {
   HomePage,
   SharedLayout,
   Navbar,
