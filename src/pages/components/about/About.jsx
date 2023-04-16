@@ -49,7 +49,7 @@ const About = ({ poppins, }) => {
         ease: "ease-in",
         transition: Power3.easeInOut,
       });
-  }, []);
+  },);
   return (
     <section className="p-4 flex opacity-0" ref={mainRef}>
       <div className="first-section w-full h-screen flex flex-col border-b border-schemeDark">

@@ -60,7 +60,7 @@ const Navbar = () => {
       transition: Power3.easeInOut,
       duration: .8,
     })
-  }, [])
+  },)
   return (
     <header className='header overflow-hidden' ref={navRef}>
       <nav className="nav flex justify-between items-center border-b h-14 p-4 border-[#30343f]">

@@ -2,20 +2,18 @@ import React from "react";
 import Image from "next/image";
 import { CartState } from "@/helpers/CartContext";
 import { FaTrash } from "react-icons/fa";
-import { Inter, Poppins } from 'next/font/google'
+import { Inter, Poppins } from "next/font/google";
 import Link from "next/link";
 
-
 const inter = Inter({
-  subsets: ['latin'],
-  weight: '400',
-})
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: '500',
-})
-
+  subsets: ["latin"],
+  weight: "500",
+});
 
 const Cart = () => {
   const {
@@ -32,9 +30,17 @@ const Cart = () => {
               key={item.id}
               className="w-[90%] p-4 rounded-md border border-black flex flex-col"
             >
-              <div className="mb-2 flex gap-3 self-start items-center justify-center" >
-                <Image width={50} height={50} src={item.image} className="avatar rounded-full"/>
-                <p className={`${poppins.className} uppercase font-semibold text-black text-xl`}>
+              <div className="mb-2 flex gap-3 self-start items-center justify-center">
+                <Image
+                  width={50}
+                  height={50}
+                  src={item.image}
+                  alt="product image"
+                  className="avatar rounded-full"
+                />
+                <p
+                  className={`${poppins.className} uppercase font-semibold text-black text-xl`}
+                >
                   {item.title}
                 </p>
               </div>
@@ -88,12 +94,28 @@ const Cart = () => {
         })
       ) : (
         <>
-                <p className={`${inter.className} text-2xl uppercase text-black self-center justify-self-center`}>The Cart is empty!</p>
-        <p className={inter.className}>Would you like to order something immediately?</p>
-        <div className="flex gap-3">
-          <Link href={'/'} className={`${poppins.className} p-2 text-center bg-schemeBlue border-2 border-black rounded-md hover:bg-schemeDarkBlue hover:text-white transition-colors duration-300`}>Go Home</Link>
-          <Link href={'/store'} className={`${poppins.className} p-2 text-center hover:bg-schemeDarkBlue hover:text-white transition-colors duration-300 bg-schemeRed text-black border-2 border-black rounded-md`}>Order Something</Link>
-        </div>
+          <p
+            className={`${inter.className} text-2xl uppercase text-black self-center justify-self-center`}
+          >
+            The Cart is empty!
+          </p>
+          <p className={inter.className}>
+            Would you like to order something immediately?
+          </p>
+          <div className="flex gap-3">
+            <Link
+              href={"/"}
+              className={`${poppins.className} p-2 text-center bg-schemeBlue border-2 border-black rounded-md hover:bg-schemeDarkBlue hover:text-white transition-colors duration-300`}
+            >
+              Go Home
+            </Link>
+            <Link
+              href={"/store"}
+              className={`${poppins.className} p-2 text-center hover:bg-schemeDarkBlue hover:text-white transition-colors duration-300 bg-schemeRed text-black border-2 border-black rounded-md`}
+            >
+              Order Something
+            </Link>
+          </div>
         </>
       )}
     </div>

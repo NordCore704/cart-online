@@ -61,7 +61,7 @@ const Contact = () => {
         ease: "ease-in",
         transition: Power3.easeInOut,
       });
-  }, []);
+  },);
   return (
     <section
       className="contact--section h-screen flex items-center justify-center gap-5 p-5 opacity-0"

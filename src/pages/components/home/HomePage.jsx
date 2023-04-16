@@ -47,7 +47,7 @@ const HomePage = () => {
         ease: "ease-in",
         transition: Power3.easeInOut,
       });
-  }, []);
+  },);
   return (
     <section
       className="intro--section overflow-hidden h-screen flex items-center justify-between opacity-0"
