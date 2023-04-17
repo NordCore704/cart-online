@@ -2,18 +2,17 @@ import React, { useRef, useEffect } from "react";
 import gsap, { Power3 } from "gsap";
 import Link from "next/link";
 import { HorizontalText } from "../../exports";
-import { Inter, Poppins } from 'next/font/google'
-
+import { Inter, Poppins } from "next/font/google";
 
 const inter = Inter({
-  subsets: ['latin'],
-  weight: '400',
-})
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: '500',
-})
+  subsets: ["latin"],
+  weight: "500",
+});
 
 const HomePage = () => {
   const timeline = gsap.timeline();
@@ -59,7 +58,7 @@ const HomePage = () => {
         ease: "ease-in",
         transition: Power3.easeInOut,
       });
-  },);
+  });
   return (
     <section
       className="intro--section overflow-hidden h-screen flex items-center justify-between opacity-0"
@@ -101,7 +100,7 @@ const HomePage = () => {
       <div className="random-decorations absolute bottom-[10%] right-[5%] w-6 h-3 cartoon hover:bg-blue-500 bg-[#ff0035] "></div>
       {/* <div className="random-decorations absolute top-[8%] right-[10%] w-6 h-full cartoon z-0 bg-[#ff0035]">
         </div> */}
-        <HorizontalText />
+      <HorizontalText />
     </section>
   );
 };
