@@ -92,7 +92,7 @@ const Navbar = () => {
 
             />
           )}
-          <ul className="mobile-none list-none flex">
+          <ul className="mobile-none list-none flex font-semibold">
             <li className="-translate-x-8 opacity-0" ref={listRefOne}>
               <Link href={"/"} className={currentRoute === '/' ? 'active' : ''}>Home</Link>
             </li>
@@ -110,7 +110,7 @@ const Navbar = () => {
 
         {!toggle ? (<div className="desktop-none  list-none absolute top-0 left-0 flex items-center justify-center backdrop-blur-sm w-[100%]  z-30 h-screen flex-col">
           <div className="bg-[#d5d6d8] p-5 h-[50%] rounded-md w-[70vw] flex items-center justify-center">
-          <ul className="flex flex-col gap-6">
+          <ul className="flex flex-col gap-6 font-semibold">
             <li>
               <Link href={"/"} onClick={toggleNav} className={currentRoute === '/' ? 'active' : ''}>Home</Link>
             </li>
