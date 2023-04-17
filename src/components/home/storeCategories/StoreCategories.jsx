@@ -61,7 +61,7 @@ const StoreCategories = () => {
   }, []);
   return (
     <section
-      className={`store--categories h-screen p-3 flex items-center justify-center gap-5 lg:gap-10 ${inter.className} overflow-hidden`}
+      className={`store--categories h-screen p-3 flex items-center justify-center gap-5 lg:gap-10 ${inter.className}`}
       ref={bodyRef}
     >
       <div
