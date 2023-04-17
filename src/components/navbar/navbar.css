@@ -16,6 +16,15 @@ ul li{
 }
 /* === mobile === */
 @media all and (width <= 600px) {
+    /* header{
+        position: relative;
+    }
+    @supports (position: sticky){
+        header{
+            position: sticky;
+            top: 0;
+        }
+    } */
     .hamburger, .desktop-none{
         display: flex;
         transition: .4s ease-in-out;

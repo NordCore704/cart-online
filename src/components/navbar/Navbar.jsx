@@ -2,17 +2,27 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-// import { logo, hamburger, closeburger } from "../../../images";
 import { logo, hamburger, closeburger } from "@/images";
 import gsap, { Power3} from "gsap";
+import { Inter, Poppins } from 'next/font/google'
+
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: '400',
+})
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: '500',
+})
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(true);
   const toggleNav = () => {
     setToggle((prev) => !prev);
   };
-  // const closeNav = () => {
-  //   setToggle(prev => !prev)
-  // }
+
 
   const router = useRouter()
   const currentRoute = router.pathname
@@ -63,7 +73,7 @@ const Navbar = () => {
     })
   },)
   return (
-    <header className='header overflow-hidden' ref={navRef}>
+    <header className={`header overflow-hidden ${inter.className}`} ref={navRef}>
       <nav className="nav flex justify-between items-center border-b h-14 p-4 border-[#30343f]">
         <div className="logo--div py-3 flex justify-center items-center h-[64px] opacity-0 -translate-x-8" ref={logoRef}
         >

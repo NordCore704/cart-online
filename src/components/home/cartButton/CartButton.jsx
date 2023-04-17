@@ -18,7 +18,7 @@ const CartButton = () => {
         })
     }, [])
   return (
-    <div className='h-10 w-10 border-2 border-black rounded-md absolute sm:left-10 top-20 right-5 cursor-pointer group hover:border-schemeDarkBlue bg-schemeDarkBlue opacity-0 scale-0 transition-colors duration-300' ref={mainRef}>
+    <div className='h-10 w-10 border-2 border-black rounded-md absolute sm:left-10 top-20 right-5 cursor-pointer group hover:border-schemeDarkBlue bg-schemeDarkBlue opacity-0 scale-0 transition-colors duration-300 overflow-hidden' ref={mainRef}>
         <Link href={'/cart'} className='rounded-md group-hover:bg-[#53ddb4] w-full h-full flex items-center transition-colors duration-200 justify-center text-center'><FaShoppingCart className='text-white text-center group-hover:text-schemeDarkBlue'/></Link>
     </div>
   )

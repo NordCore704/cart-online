@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ShopElegant = () => {
   return (
-    <section className="elegant--section flex items-center justify-center gap-2 p-3">
+    <section className="elegant--section flex items-center justify-center gap-2 p-3 overflow-hidden">
       <div className="self-start h-[70vh] flex flex-col">
         <div className=" text-center flex flex-col  items-center justify-center p-4 h-1/2 bg-[#48acf0] border border-black rounded-md ">
         <p className="text-3xl uppercase text-black">Shop Elegant</p>

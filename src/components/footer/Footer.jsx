@@ -22,7 +22,7 @@ const Footer = () => {
   const currentRoute = router.pathname
 
   return (
-    <footer className='foot border-y border-black h-[50vh]  relative mt-60 flex flex-col gap-4 items-center justify-end bg-periwinkle p-5'>
+    <footer className='foot border-y border-black h-[50vh]  relative mt-60 flex flex-col gap-4 items-center justify-end bg-periwinkle p-5 overflow-hidden'>
       <div className="logo-motto--div border border-black h-[30vh] w-[55%] bg-[#48acf0] absolute left-1/4 -top-1/4 rounded-md cartoon flex flex-col items-center justify-center gap-4 p-4">
         <div className="flex items-center justify-self-start">
         <Image src={logo} alt='logo'width={50}/>

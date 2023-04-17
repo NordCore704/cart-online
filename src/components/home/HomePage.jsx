@@ -2,6 +2,18 @@ import React, { useRef, useEffect } from "react";
 import gsap, { Power3 } from "gsap";
 import Link from "next/link";
 import { HorizontalText } from "../../exports";
+import { Inter, Poppins } from 'next/font/google'
+
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: '400',
+})
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: '500',
+})
 
 const HomePage = () => {
   const timeline = gsap.timeline();
@@ -72,7 +84,7 @@ const HomePage = () => {
         ref={clipDivRef}
       >
         <p
-          className="text--clip font-extrabold uppercase text-center opacity-0"
+          className={`text--clip font-extrabold uppercase text-center opacity-0`}
           ref={clipRef}
         >
           Cart <br /> it all
@@ -80,7 +92,7 @@ const HomePage = () => {
 
         <Link
           href={"/store"}
-          className="shop-btn flex justify-center items-center hover:bg-[#53ddb4] w-44 h-12 mb-3 rounded-lg bg-[#ff0035] border cartoon border-black hover:border hover:border-black -translate-y-8 opacity-0 transition uppercase font-semibold"
+          className={`shop-btn flex justify-center items-center hover:bg-[#53ddb4] w-44 h-12 mb-3 rounded-lg bg-[#ff0035] border cartoon border-black hover:border hover:border-black -translate-y-8 opacity-0 transition uppercase font-bold ${poppins.className}`}
           ref={buttonRef}
         >
           Shop Now
