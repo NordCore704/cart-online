@@ -27,7 +27,7 @@ const Footer = () => {
           <Image src={logo} alt="logo" width={50} />
           <p className="font-semibold text-xl">CartO</p>
         </div>
-        <p className="uppercase text-lg font-semibold">Shop With Us Today!</p>
+        <p className={`uppercase text-lg font-semibold ${poppins.className}`}>Shop With Us Today!</p>
         <Link
           href={"/store"}
           className={`btn btn-accent bg-schemeRed hover:bg-[#5cddb4] text-black uppercase font-bold cartoon foot-btn ${inter.className}`}
