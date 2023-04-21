@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import { HomePage, Apparel, StoreCategories, ShopElegant, CartButton } from '../exports'
+import { Inter, Poppins } from 'next/font/google'
+import { HomePage, Apparel, StoreCategories, ShopElegant, CartButton, AboutLink, PhotoCollage, OverlaySection } from '../exports'
 import { favicon } from '@/images'
 
 const inter = Inter({ subsets: ['latin'] })
+const poppins = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -18,7 +19,10 @@ export default function Home() {
       <main className='w-full min-h-screen overflow-hidden'>
         <HomePage />
         <CartButton />
+        <AboutLink inter={inter} poppins={poppins}/>
         <Apparel />
+        <PhotoCollage inter={inter} poppins={poppins}/>
+        <OverlaySection inter={inter} poppins={poppins} />
         <StoreCategories />
         <ShopElegant />
       </main>

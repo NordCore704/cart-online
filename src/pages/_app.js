@@ -6,6 +6,7 @@ import '../components/footer/footer.css'
 import '../components/about/about.css'
 import '../components/contact/contact.css'
 import '../components/products/products.css'
+import '../components/home/overlaySection/overlay-section.css'
 import '../components/cart/cart.css'
 import CartContext from '@/helpers/CartContext'
 

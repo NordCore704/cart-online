@@ -3,8 +3,11 @@ import About from "../components/about/About";
 import Navbar from "../components/navbar/Navbar";
 import SharedLayout from "../components/layout/SharedLayout";
 import HomePage from "../components/home/HomePage";
+import AboutLink from "@/components/home/AboutLink/AboutLink";
+import PhotoCollage from "@/components/home/Collage/PhotoCollage";
 import Apparel from "../components/home/apparel/apparel";
 import StoreCategories from "../components/home/storeCategories/StoreCategories";
+import OverlaySection from "@/components/home/overlaySection/OverlaySection";
 import ShopElegant from "../components/home/finalSection/ShopElegant";
 import OurStory from "../components/about/OurStory/OurStory";
 import Contact from "../components/contact/Contact";
@@ -25,6 +28,9 @@ export {
   About,
   Footer,
   Apparel,
+  AboutLink,
+  PhotoCollage,
+  OverlaySection,
   StoreCategories,
   ShopElegant,
   OurStory,

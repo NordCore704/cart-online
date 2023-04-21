@@ -19,6 +19,7 @@ const poppins = Poppins({
 const StoreCategories = () => {
   const bodyRef = useRef();
   const cardRef = useRef();
+  const scrollPinRef = useRef()
   const secondCardRef = useRef();
   const thirdCardRef = useRef();
 
@@ -29,13 +30,20 @@ const StoreCategories = () => {
           trigger: bodyRef.current,
           pin: true,
           start: "top top",
-          end: "+=150vh",
+          end: "+=110vh",
           pinSpacing: true,
           anticipatePin: true,
-          toggleActions: "play reverse play reverse",
+          toggleActions: 'restart complete reverse reset',
           scrub: true,
           invalidateOnRefresh: true,
         },
+      })
+      timeline.to(scrollPinRef.current,{
+        opacity: 1,
+        x: 0,
+        ease: 'ease-in',
+        transition: Power3.easeInOut,
+        duration: 1,
       })
       timeline.to(cardRef.current, {
         opacity: 1,
@@ -61,9 +69,10 @@ const StoreCategories = () => {
   }, []);
   return (
     <section
-      className={`store--categories h-screen p-3 flex items-center justify-center gap-5 lg:gap-10 ${inter.className}`}
+      className={`store--categories p-3 items-center justify-center flex gap-5 lg:gap-10 ${inter.className}`}
       ref={bodyRef}
     >
+      <div className="opacity-0 flex gap-5 lg:gap-10 items-center justify-center -translate-x-10" ref={scrollPinRef}>
       <div
         className="rounded-md flex bg-schemeBlue flex-col items-center justify-center shadow-md p-4 text-center border-black border-2 -translate-x-8 opacity-0"
         ref={cardRef}
@@ -101,7 +110,7 @@ const StoreCategories = () => {
         className="rounded-md flex flex-col items-center justify-center shadow-md p-4 text-center text-black opacity-0 -translate-x-8 bg-schemeBlue border-2 border-black"
         ref={thirdCardRef}
       >
-        <Image alt="accessories-icon" src={gadgetsIcon} />
+        <Image alt="gadgets-icon" src={gadgetsIcon} />
         <h3 className={`text-lg font-semibold ${poppins.className}`}>Gadgets</h3>
         <p className={inter.className}>
           Fans of gizmos are covered nicely, we have all kinds of gadgets, you
@@ -115,6 +124,8 @@ const StoreCategories = () => {
           Jump In
         </Link>
       </div>
+      </div>
+
     </section>
   );
 };

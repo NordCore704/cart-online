@@ -61,7 +61,7 @@ const HomePage = () => {
   });
   return (
     <section
-      className="intro--section overflow-hidden h-screen flex items-center justify-between opacity-0"
+      className="intro--section overflow-hidden h-screen flex items-center justify-between opacity-0 relative"
       ref={bodyRef}
     >
       <div className="intro--div p-3">
@@ -71,7 +71,7 @@ const HomePage = () => {
         >
           Shop for <br />
           anything{" "}
-          <span className="text-[#ff0035] -rotate-[5deg] bg-[#48acf0] hover:bg-[#53ddb4] transition hover:text-[#004398] hover:border-[#004398] lg:h-20 border-dashed border-2 border-[#ff0035] my-2 flex items-center justify-center z-[-1]">
+          <span className="text-[#ff0035] -rotate-[5deg] bg-schemeBlue hover:bg-[#53ddb4] hover:text-[#004398] transition-colors duration-200 hover:border-[#004398] lg:h-20 border-dashed border-2 border-[#ff0035] my-2 flex items-center justify-center z-[-1]">
             And
           </span>
           everything!
@@ -79,7 +79,7 @@ const HomePage = () => {
       </div>
 
       <div
-        className="avatar-clip-div z-10 bg-gradient-to-br from-[#48acf8]  to-[#48acf0] flex items-center gap-10 flex-col justify-center self-start mt-10 p-3 opacity-0 translate-y-5 translate-x-5 mr-3"
+        className="avatar-clip-div z-10 bg-gradient-to-br  bg-periwinkle flex items-center gap-10 flex-col justify-center self-start mt-10 p-3 opacity-0 translate-y-5 translate-x-5 mr-3"
         ref={clipDivRef}
       >
         <p
@@ -91,7 +91,7 @@ const HomePage = () => {
 
         <Link
           href={"/store"}
-          className={`shop-btn flex justify-center items-center hover:bg-[#53ddb4] w-44 h-12 mb-3 rounded-lg bg-[#ff0035] border cartoon border-black hover:border hover:border-black -translate-y-8 opacity-0 transition uppercase font-bold ${poppins.className}`}
+          className={`shop-btn flex justify-center items-center hover:bg-[#53ddb4] w-44 h-12 mb-3 rounded-lg bg-[#ff0035] border cartoon border-black hover:border hover:border-black -translate-y-8 opacity-0 transition-colors duration-300 uppercase font-bold ${poppins.className}`}
           ref={buttonRef}
         >
           Shop Now

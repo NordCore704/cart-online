@@ -99,12 +99,12 @@ const Contact = () => {
             <input
               placeholder="Name"
               type="text"
-              className="border-black mb-4 border-b-2 active:outline-none focus:outline-none outline-none hover:outline-none p-1 w-full placeholder:text-black"
+              className="border-black mb-4 border-b-2 active:outline-none focus:outline-none outline-none hover:outline-none p-1 w-full placeholder:text-black bg-schemeWhite"
             />
             <input
               type="email"
               placeholder="Email"
-              className="border-black mb-4 border-b-2 p-1 w-full active:outline-none focus:outline-none outline-none placeholder:text-black"
+              className="border-black mb-4 border-b-2 p-1 w-full active:outline-none focus:outline-none outline-none bg-schemeWhite placeholder:text-black"
             />
             <button className={`border hover:bg-schemeRed hover:text-schemeWhite border-black font-semibold text-black w-[100%] h-12 bg-schemeBlue rounded-full ${poppins.className}`}>
               Contact Us

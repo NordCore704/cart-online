@@ -37,7 +37,7 @@ const Apparel = () => {
         // toggleActions: "play reverse play reverse",
         toggleActions: 'restart complete reverse reset', 
         start: 'top top',
-        end: '+=150vh',
+        end: '+=110vh',
         anticipatePin: true,
         invalidateOnRefresh: true,
       },
@@ -78,10 +78,10 @@ const Apparel = () => {
   }, [])
   
   return (
-    <section ref={mainRef} className='p-3 overflow-hidden'>
-    <section className='apparel--section h-full cartoon bg-[#48acf0] flex flex-row-reverse gap-4 px-3 -translate-x-10 opacity-0 overflow-hidden' ref={scrollPinRef}>
+    <section ref={mainRef} className='p-3 flex items-center justify-center overflow-hidden'>
+    <section className='apparel--section cartoon  bg-schemeBlue flex flex-row-reverse gap-4 px-3 -translate-x-10 opacity-0 overflow-hidden' ref={scrollPinRef}>
         <div className='apparel--text sm:w-[100%] flex flex-col w-[50%] items-center justify-center border-l-2 px-2 border-[#30343f]'>
-            <h2 className={`text-2xl lg:text-4xl uppercase font-medium opacity-0 translate-y-6 mb-3 ${poppins.className}`} ref={headingRef}>Shop Apparel</h2>
+            <h2 className={`text-2xl text-black lg:text-4xl uppercase font-medium opacity-0 translate-y-6 mb-3 ${poppins.className}`} ref={headingRef}>Shop Apparel</h2>
             <p className={`opacity-0 lg:w-[50%] translate-y-8 no-shadow ${inter.className}`} ref={textRef}>
                 CartO brings to you a vast selection of base apparel of different kinds, style and look, you could become anything or anyone you want to look like, it's just a cart order away!
             </p>

@@ -108,7 +108,7 @@
         height: 50%;
         background-color: #48acf0;
     }
-    .store--categories{
+    .store--categories div{
         flex-direction: column;
         margin-top: 80px;
     }

@@ -34,9 +34,9 @@ ul li{
         opacity: 1;
 
     }
-    .desktop-none div {
-        background: linear-gradient(to left, #fafaff, #e4d9ff);
-    }
+    /* .desktop-none div {
+        /* background: linear-gradient(to left, #fafaff, #e4d9ff);
+    } */
     .mobile-none{
         display: none;
     }
