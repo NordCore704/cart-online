@@ -5,18 +5,19 @@ import { hatladyFull, hatlady } from "@/images";
 import { FaArrowRight } from "react-icons/fa";
 import { GiMonclerJacket } from 'react-icons/gi'
 import { BsStars } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const OverlaySection = ({ inter, poppins }) => {
   return (
     <section className="flex relative items-center justify-center bg-periwinkle px-3 border-b border-black">
       <Image src={hatlady} alt="hat-lady" className="z-[1] " />
       <div
-        className={`border text-black border-black w-32 h-40 rounded-md p-2 absolute top-32 left-8 lg:left-[30%] flex flex-col items-center justify-center gap-3 ${inter.className}`}
+        className={`border text-black border-black w-32 h-40 rounded-md p-2 absolute top-32 left-8 lg:left-[30%] flex flex-col items-center bg-schemeBlue justify-center gap-3 ${inter.className}`}
       >
         <p className="font-semibold ">Shop Women</p>
         <Link
           href={"/store/women's clothing"}
-          className={`rounded-full bg-schemeBlue p-3 hover:border hover:border-black duration-300 hover:bg-schemeRed transition-colors z-20`}
+          className={`rounded-full bg-schemeRed p-3 hover:border hover:border-black duration-300 hover:bg-[#53ddb4] transition-colors z-20`}
         >
           <FaArrowRight />
         </Link>
@@ -32,12 +33,12 @@ const OverlaySection = ({ inter, poppins }) => {
         All elegance and beauty, in diverse forms and styles.
       </p>
       <div
-        className={`border text-black border-black w-32 h-40 rounded-md p-2 absolute bottom-24 right-3 lg:right-[30%] flex flex-col items-center justify-center gap-3 ${inter.className}`}
+        className={`border text-black border-black w-32 h-40 rounded-md p-2 absolute bottom-24 right-3 lg:right-[30%] flex flex-col items-center justify-center gap-3 ${inter.className} bg-schemeBlue`}
       >
         <p className="font-semibold ">Shop Men</p>
         <Link
           href={"/store/men's clothing"}
-          className={`rounded-full bg-schemeBlue p-3 hover:border hover:border-black duration-300 hover:bg-schemeRed transition-colors z-20`}
+          className={`rounded-full bg-schemeRed p-3 hover:border hover:border-black duration-300 hover:bg-[#53ddb5] transition-colors z-20`}
         >
           <FaArrowRight />
         </Link>

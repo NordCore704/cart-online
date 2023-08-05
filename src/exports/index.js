@@ -21,6 +21,7 @@ import ProductInfo from "../components/products/ProductInfo";
 import MiniCartDisplay from "../components/cart/MiniCartDisplay";
 import CartCheckout from "../components/cart/CartCheckout";
 import CartButton from "../components/home/cartButton/CartButton";
+import NotFound from "@/components/error/NotFound";
 export {
   HomePage,
   SharedLayout,
@@ -44,5 +45,6 @@ export {
   ProductInfo,
   MiniCartDisplay,
   CartCheckout,
-  CartButton
+  CartButton,
+  NotFound,
 };

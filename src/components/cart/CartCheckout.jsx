@@ -23,6 +23,10 @@ const CartCheckout = () => {
     state: { cart },
   } = CartState();
 
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
   useEffect(() => {
     setTotal(cart.reduce((acc, current) => acc + Number(current.price) * current.qty, 0));
   }, [cart]);
@@ -34,6 +38,7 @@ const CartCheckout = () => {
       <p className={`font-semibold lg:self-center ${inter.className}`}>Total: ${total}</p>
       <button
         disabled={cart.length === 0}
+        onClick={handleSubmit}
         className="bg-schemeRed lg:self-center lg:w-[70%] p-1 rounded-md text-black border-black border hover:bg-[#5dbb] transition-colors duration-300 hover:text-white disabled:bg-[#ff0033a2] disabled:text-white"
       >
         Proceed To Checkout

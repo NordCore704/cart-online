@@ -5,11 +5,6 @@ import '../constants/store.json'
 const Cart = createContext()
 
 
-const products = [
-  {
-
-  }
-]
 
 const CartContext = ({ children }) => {
   const [items, setItems] = useState([])

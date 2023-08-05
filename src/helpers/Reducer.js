@@ -11,6 +11,9 @@ export const cartReducer = (state, action) => {
         cart: [...state.cart.filter((c) => c.id !== action.payload.id)],
       };
     case "CHANGE_CART_QTY":
+      if(!action.payload){
+        throw new Error('action.payload missing in QUANTITY action')
+      }
       return {
         ...state,
         cart: [

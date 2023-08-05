@@ -2,6 +2,7 @@ import logo from "./cart-blue.png";
 import favicon from "./cart-green.png";
 import hamburger from "./icon-hamburger.svg";
 import closeburger from "./icon-close.svg";
+import errorImage from './404.png'
 import clip from "./clip.jpg";
 import jeanKids from "./jean-kids.jpg";
 import hatlady from "./hatlady.png";
@@ -61,4 +62,5 @@ export {
   anonymous,
   contactImageOne,
   contactImageTwo,
+  errorImage,
 };

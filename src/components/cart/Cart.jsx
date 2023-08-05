@@ -49,8 +49,9 @@ const Cart = () => {
                 <label htmlFor="quantity"></label>
                 <select
                   className="w-20 text-center border border-schemeDark cursor-pointer rounded-md bg-schemeWhite"
-                  name="quantity"
-                  id="quantity"
+                  name="qty"
+                  id="qty"
+                  value={item.qty}
                   onChange={(e) =>
                     dispatch({
                       type: "CHANGE_CART_QTY",
@@ -64,7 +65,7 @@ const Cart = () => {
                   <option className="text-center" value={item.qty}>
                     1
                   </option>
-                  <option className="text-center" value={item.qty}>
+                  <option className="text-center" value="2">
                     2
                   </option>
                   <option className="text-center" value="3">
@@ -78,7 +79,7 @@ const Cart = () => {
                   </option>
                 </select>
 
-                <button
+                <button type="button"
                   onClick={() => {
                     dispatch({
                       type: "REMOVE_FROM_CART",

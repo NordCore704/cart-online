@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { apparelIcon, accessoriesIcon, gadgetsIcon } from "@/images";
 import Image from "next/image";
 import gsap, { Power3 } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Link from "next/link";
 import { Inter, Poppins } from 'next/font/google'
 
@@ -15,7 +16,7 @@ const poppins = Poppins({
   subsets: ['latin'],
   weight: '500',
 })
-
+gsap.registerPlugin(ScrollTrigger)
 const StoreCategories = () => {
   const bodyRef = useRef();
   const cardRef = useRef();
@@ -30,7 +31,7 @@ const StoreCategories = () => {
           trigger: bodyRef.current,
           pin: true,
           start: "top top",
-          end: "+=110vh",
+          end: "+=120vh",
           pinSpacing: true,
           anticipatePin: true,
           toggleActions: 'restart complete reverse reset',
@@ -69,10 +70,10 @@ const StoreCategories = () => {
   }, []);
   return (
     <section
-      className={`store--categories p-3 items-center justify-center flex gap-5 lg:gap-10 ${inter.className}`}
+      className={`store--categories  p-3 items-center justify-center flex gap-5 lg:gap-10 ${inter.className}`}
       ref={bodyRef}
     >
-      <div className="opacity-0 flex gap-5 lg:gap-10 items-center justify-center -translate-x-10" ref={scrollPinRef}>
+      <div className="opacity-0 flex gap-3 lg:gap-10 items-center justify-center -translate-x-10" ref={scrollPinRef}>
       <div
         className="rounded-md flex bg-schemeBlue flex-col items-center justify-center shadow-md p-4 text-center border-black border-2 -translate-x-8 opacity-0"
         ref={cardRef}
